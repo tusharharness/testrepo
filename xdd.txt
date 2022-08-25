@@ -1,0 +1,21 @@
+@Test
+  @Owner(developers = RAGHAV_GUPTA)
+  @Category(UnitTests.class)
+  public void testRepoAndOwnerForGithubOnPrem() {
+   ***REMOVED***
+        .isEqualTo("wings-software");
+    ***REMOVED***
+***REMOVED***
+    assertThat(GitClientHelper.getGitOwner("git@github.harness.com:wings-software/portal.git", false))
+        .isEqualTo("wings-software");
+    assertThat(GitClientHelper.getGitRepo("git@github.harness.com:wings-software/portal.git")).isEqualTo("portal");
+  }
+@Test
+  @Owner(developers = HARSH)
+  @Category(UnitTests.class)
+  public void testGitHubType() {
+    ***REMOVED***
+***REMOVED***
+    assertThat(githubSAAS).isEqualTo(false);
+  }
+
